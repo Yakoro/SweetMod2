@@ -9,6 +9,7 @@ import net.yakoro.sweetmod.util.ModStrippableBlocks;
 import net.yakoro.sweetmod.villager.ModVillagers;
 import net.yakoro.sweetmod.world.feature.ModConfiguredFeatures;
 import net.yakoro.sweetmod.world.gen.ModOreGeneration;
+import net.yakoro.sweetmod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 public class SweetMod implements ModInitializer {
@@ -24,7 +25,7 @@ public class SweetMod implements ModInitializer {
 
         ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
-		ModOreGeneration.generateOres();
+		ModWorldGen.generateWorldGen();
 
 		ModFlammableBlocks.registerFlammableBlock();
 		ModStrippableBlocks.registerStrippables();

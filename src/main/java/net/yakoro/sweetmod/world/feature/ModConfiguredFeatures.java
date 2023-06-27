@@ -5,6 +5,7 @@ import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.yakoro.sweetmod.SweetMod;
@@ -31,10 +32,18 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> CHOCO_TREE =
     ConfiguredFeatures.register("choco_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.CHOCO_LOG),
-            new StraightTrunkPlacer(8, 10, 6),
+            new StraightTrunkPlacer(6, 8, 4),
             BlockStateProvider.of(ModBlocks.CHOCO_LEAVES),
-            new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+            new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 6),
             new TwoLayersFeatureSize(1, 0, 2)).build());
+
+    public static final RegistryEntry<PlacedFeature> CHOCO_CHECKED = PlacedFeatures.register("choco_checked",
+            ModConfiguredFeatures.CHOCO_TREE, List.of(PlacedFeatures.wouldSurvive(ModBlocks.CHOCO_SAPLING)));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> CHOCO_SPAWN =
+            ConfiguredFeatures.register("choco_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(CHOCO_CHECKED, 0.5f)),
+                    CHOCO_CHECKED));
 
 
     public static void registerConfiguredFeatures() {

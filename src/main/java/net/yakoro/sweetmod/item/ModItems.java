@@ -65,10 +65,10 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ItemGroup.MISC).group(ModItemGroup.SWEET)));
 
     public static final Item CHOCBAR100 = registerItem("chocobar100",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC).group(ModItemGroup.SWEET)));
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).group(ModItemGroup.SWEET).food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 500, 1) , 1.0f).build())));
 
     public static final Item CHOCBAR70 = registerItem("chocobar70",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC).group(ModItemGroup.SWEET)));
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).group(ModItemGroup.SWEET).food(new FoodComponent.Builder().hunger(2).saturationModifier(4f).statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 1) , 1.0f).build())));
 
     public static final Item COCOABEAN = registerItem("cocoabean",
             new Item(new FabricItemSettings().group(ItemGroup.MISC).group(ModItemGroup.SWEET)));

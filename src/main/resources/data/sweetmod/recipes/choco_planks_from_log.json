@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sweetmod:choco_log"
+    }
+  ],
+  "result": {
+    "item": "sweetmod:choco_planks",
+    "count": 4
+  }
+}
