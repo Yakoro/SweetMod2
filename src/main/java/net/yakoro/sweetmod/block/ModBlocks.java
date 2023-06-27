@@ -13,6 +13,7 @@ import net.yakoro.sweetmod.SweetMod;
 import net.minecraft.util.registry.Registry;
 import net.yakoro.sweetmod.block.custom.*;
 import net.yakoro.sweetmod.item.ModItemGroup;
+import net.yakoro.sweetmod.world.feature.tree.ChocoSaplingGenerator;
 
 public class ModBlocks {
     public static final Block CORDIERITE_BLOCK = registerBlock("cordierite_block",
@@ -56,9 +57,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.SWEET);
     public static final Block CHOCO_LEAVES = registerBlock("choco_leaves",
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.SWEET);
-    //public static final Block CHOCO_SAPLING = registerBlock("choco_sapling",
-    //        new SaplingBlock(, FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.SWEET);
-
+    public static final Block CHOCO_SAPLING = registerBlock("choco_sapling",
+            new SaplingBlock(new ChocoSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.SWEET);
 
     //
 
