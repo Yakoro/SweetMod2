@@ -5,6 +5,7 @@ import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.MegaPineFoliagePlacer;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
@@ -32,9 +33,9 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> CHOCO_TREE =
     ConfiguredFeatures.register("choco_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.CHOCO_LOG),
-            new StraightTrunkPlacer(6, 8, 4),
+            new StraightTrunkPlacer(10, 12, 8),
             BlockStateProvider.of(ModBlocks.CHOCO_LEAVES),
-            new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 6),
+            new MegaPineFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), ConstantIntProvider.create(0)),
             new TwoLayersFeatureSize(1, 0, 2)).build());
 
     public static final RegistryEntry<PlacedFeature> CHOCO_CHECKED = PlacedFeatures.register("choco_checked",
