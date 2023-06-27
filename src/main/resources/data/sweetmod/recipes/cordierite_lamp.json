@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "sweetmod:cordierite"
+    },
+
+  "&": {
+    "item": "minecraft:glowstone"
+  }
+},
+  "pattern": [
+    "&&&",
+    "&#&",
+    "&&&"
+  ],
+
+  "result": {
+    "item": "sweetmod:cordierite_lamp"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "sweetmod:cordierite_block",
+    "sweetmod:cordierite_ore",
+    "sweetmod:deepslate_cordierite_ore"
+  ]
+}

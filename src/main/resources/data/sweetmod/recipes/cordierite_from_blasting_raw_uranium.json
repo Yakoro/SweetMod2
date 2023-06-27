@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 50,
+  "experience": 20,
+  "group": "cordierite",
+  "ingredient": {
+    "item": "sweetmod:raw_uranium"
+  },
+  "result": "sweetmod:uranium"
+}

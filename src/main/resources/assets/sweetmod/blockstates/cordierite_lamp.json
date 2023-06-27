@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "sweetmod:block/cordierite_lamp_on" },
+    "lit=false": { "model": "sweetmod:block/cordierite_lamp_off" }
+  }
+}

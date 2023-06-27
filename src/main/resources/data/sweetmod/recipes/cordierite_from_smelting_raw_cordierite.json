@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 20,
+  "group": "cordierite",
+  "ingredient": {
+    "item": "sweetmod:raw_cordierite"
+  },
+  "result": "sweetmod:cordierite"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 200,
+  "experience": 10,
+  "group": "sweetmod",
+  "ingredient": {
+    "item": "sweetmod:cocoabean"
+  },
+  "result": "sweetmod:chocobar100"
+}

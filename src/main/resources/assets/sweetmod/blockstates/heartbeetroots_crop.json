@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "age=0": { "model":  "sweetmod:block/heartbeetroots_stage0" },
+    "age=1": { "model":  "sweetmod:block/heartbeetroots_stage1" },
+    "age=2": { "model":  "sweetmod:block/heartbeetroots_stage2" },
+    "age=3": { "model":  "sweetmod:block/heartbeetroots_stage3" },
+    "age=4": { "model":  "sweetmod:block/heartbeetroots_stage4" },
+    "age=5": { "model":  "sweetmod:block/heartbeetroots_stage5" },
+    "age=6": { "model":  "sweetmod:block/heartbeetroots_stage6" }
+  }
+}

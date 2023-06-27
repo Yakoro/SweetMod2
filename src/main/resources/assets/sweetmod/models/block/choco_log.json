@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "sweetmod:block/choco_log_top",
+    "side": "sweetmod:block/choco_log"
+  }
+}
