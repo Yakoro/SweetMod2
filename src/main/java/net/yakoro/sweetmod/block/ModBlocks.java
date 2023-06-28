@@ -56,7 +56,7 @@ public class ModBlocks {
     public static final Block CHOCO_PLANKS = registerBlock("choco_planks",
             new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.SWEET);
     public static final Block CHOCO_LEAVES = registerBlock("choco_leaves",
-            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.SWEET);
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).strength(0.1f).requiresTool()), ModItemGroup.SWEET);
     public static final Block CHOCO_SAPLING = registerBlock("choco_sapling",
             new SaplingBlock(new ChocoSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.SWEET);
 

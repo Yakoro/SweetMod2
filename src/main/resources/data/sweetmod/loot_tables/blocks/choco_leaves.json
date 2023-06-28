@@ -38,12 +38,12 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "sweetmod:cocoabean"
+              "name": "sweetmod:choco_sapling"
             }
           ]
         }
       ],
-      "rolls": 1.0
+      "rolls": 0.8
     }
   ]
 }

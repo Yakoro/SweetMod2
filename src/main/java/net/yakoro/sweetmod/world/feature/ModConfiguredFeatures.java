@@ -33,9 +33,9 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> CHOCO_TREE =
     ConfiguredFeatures.register("choco_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.CHOCO_LOG),
-            new StraightTrunkPlacer(10, 12, 8),
+            new StraightTrunkPlacer(3, 4, 2),
             BlockStateProvider.of(ModBlocks.CHOCO_LEAVES),
-            new MegaPineFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), ConstantIntProvider.create(0)),
+            new MegaPineFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(8), ConstantIntProvider.create(8)),
             new TwoLayersFeatureSize(1, 0, 2)).build());
 
     public static final RegistryEntry<PlacedFeature> CHOCO_CHECKED = PlacedFeatures.register("choco_checked",
