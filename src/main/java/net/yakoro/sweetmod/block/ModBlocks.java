@@ -12,6 +12,7 @@ import net.yakoro.sweetmod.SweetMod;
 
 import net.minecraft.util.registry.Registry;
 import net.yakoro.sweetmod.block.custom.*;
+//import net.yakoro.sweetmod.block.entity.CrusherBlockEntity;
 import net.yakoro.sweetmod.item.ModItemGroup;
 import net.yakoro.sweetmod.world.feature.tree.ChocoSaplingGenerator;
 
@@ -61,6 +62,14 @@ public class ModBlocks {
             new SaplingBlock(new ChocoSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.SWEET);
 
     //
+
+    public static final Block CRUSHER_STATION = registerBlock("crusher",
+            new CrusherStationBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.SWEET);
+    public static final Block CREAMER_STATION = registerBlock("creamer",
+            new CreamerStationBlock(FabricBlockSettings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.SWEET);
+
+    public static final Block DONUT_BLOCK = registerBlock("donut_block",
+            new Block(FabricBlockSettings.of(Material.WOOL).strength(2f).requiresTool()), ModItemGroup.SWEET);
 
 
     private static Block registerBlockWithoutItem(String name, Block block){

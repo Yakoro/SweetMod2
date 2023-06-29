@@ -4,10 +4,14 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 import net.yakoro.sweetmod.block.ModBlocks;
 import net.yakoro.sweetmod.fluid.ModFluids;
+import net.yakoro.sweetmod.screen.CrusherScreen;
+import net.yakoro.sweetmod.screen.ModScreenHandlers;
 
 public class SweetModClient implements ClientModInitializer {
     @Override
@@ -35,5 +39,7 @@ public class SweetModClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
                 ModFluids.STILL_ACID, ModFluids.FLOWING_ACID);
+
+        HandledScreens.register(ModScreenHandlers.CRUSHER_SCREEN_HANDLER, CrusherScreen::new);
     }
 }

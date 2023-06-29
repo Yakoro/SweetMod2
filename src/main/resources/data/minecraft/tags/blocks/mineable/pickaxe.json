@@ -9,6 +9,9 @@
     "sweetmod:uranium_ore",
     "sweetmod:deepslate_uranium_ore",
 
-    "sweetmod:heal_block"
+    "sweetmod:heal_block",
+
+    "sweetmod:crusher",
+    "sweetmod:creamer"
   ]
 }

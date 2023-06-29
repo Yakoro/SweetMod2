@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "&#&",
+    "/%@",
+    "&€&"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:egg"
+    },
+    "&": {
+      "item": "sweetmod:chocobar70"
+    },
+    "%": {
+      "item": "minecraft:milk_bucket"
+    },
+    "/": {
+      "item": "sweetmod:flour"
+    },
+    "@": {
+      "item": "sweetmod:butter"
+    },
+    "€": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "sweetmod:donut_block"
+  }
+}

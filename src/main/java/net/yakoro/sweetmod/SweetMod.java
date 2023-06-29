@@ -2,8 +2,10 @@ package net.yakoro.sweetmod;
 
 import net.fabricmc.api.ModInitializer;
 import net.yakoro.sweetmod.block.ModBlocks;
+import net.yakoro.sweetmod.block.entity.ModBlockEntities;
 import net.yakoro.sweetmod.fluid.ModFluids;
 import net.yakoro.sweetmod.item.ModItems;
+import net.yakoro.sweetmod.screen.ModScreenHandlers;
 import net.yakoro.sweetmod.util.ModFlammableBlocks;
 import net.yakoro.sweetmod.util.ModStrippableBlocks;
 import net.yakoro.sweetmod.villager.ModVillagers;
@@ -31,5 +33,8 @@ public class SweetMod implements ModInitializer {
 		ModStrippableBlocks.registerStrippables();
 
 		ModFluids.register();
+		ModBlockEntities.registerBlockEntities();
+
+		ModScreenHandlers.registerAllScreenHandlers();
 	}
 }

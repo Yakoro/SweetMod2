@@ -48,6 +48,10 @@
   "block.sweetmod.stripped_choco_wood": "Stripped Chocolate Wood",
   "block.sweetmod.choco_planks": "Chocolate Planks",
   "block.sweetmod.choco_leaves": "Chocolate Leaves",
-  "block.sweetmod.choco_sapling": "Chocolate Sapling"
+  "block.sweetmod.choco_sapling": "Chocolate Sapling",
+
+  "block.sweetmod.crusher": "Wheat Crusher",
+  "block.sweetmod.creamer": "Creamer",
+  "block.sweetmod.donut_block": "Donut Block"
 
 }

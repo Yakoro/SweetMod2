@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "sweetmod:choco_leaves"
+    "sweetmod:choco_leaves",
+    "sweetmod:donut_block"
   ]
 }

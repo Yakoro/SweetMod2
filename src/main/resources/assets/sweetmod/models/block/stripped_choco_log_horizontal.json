@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_column_horizontal",
   "textures": {
-    "end": "sweetmod:block/choco_log_top_horizontal",
-    "side": "sweetmod:block/choco_log_horizontal"
+    "end": "sweetmod:block/stripped_choco_log_top",
+    "side": "sweetmod:block/stripped_choco_log"
   }
 }

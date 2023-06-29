@@ -78,7 +78,7 @@ public class ModVillagers {
                 factories -> {
                     factories.add(((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 40),
-                            new ItemStack(ModItems.FLOUR, 1), 1, 10, 0.02f
+                            new ItemStack(ModBlocks.CREAMER_STATION, 1), 1, 10, 0.02f
                     )));
                 });
     }
