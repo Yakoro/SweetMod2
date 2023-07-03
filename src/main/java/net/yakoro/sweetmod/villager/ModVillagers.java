@@ -25,9 +25,9 @@ public class ModVillagers {
     public static final VillagerProfession NURSE = registerProfession("nurse",
             RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(SweetMod.MOD_ID, "heal_poi")));
 
-    public static final PointOfInterestType CAKE = registerPOI("cake", Blocks.CAKE);
+    public static final PointOfInterestType CAKE = registerPOI("cake_poi", Blocks.CAKE);
     public static final VillagerProfession COOKER = registerProfession("cooker",
-            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(SweetMod.MOD_ID, "cake")));
+            RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(SweetMod.MOD_ID, "cake_poi")));
 
     public static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
         return Registry.register(Registry.VILLAGER_PROFESSION, new Identifier(SweetMod.MOD_ID, name),
