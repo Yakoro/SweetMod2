@@ -9,6 +9,7 @@ import net.yakoro.sweetmod.screen.ModScreenHandlers;
 import net.yakoro.sweetmod.util.ModFlammableBlocks;
 import net.yakoro.sweetmod.util.ModStrippableBlocks;
 import net.yakoro.sweetmod.villager.ModVillagers;
+import net.yakoro.sweetmod.world.dimension.ModDimensions;
 import net.yakoro.sweetmod.world.feature.ModConfiguredFeatures;
 import net.yakoro.sweetmod.world.gen.ModOreGeneration;
 import net.yakoro.sweetmod.world.gen.ModWorldGen;
@@ -36,5 +37,7 @@ public class SweetMod implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 
 		ModScreenHandlers.registerAllScreenHandlers();
+
+		ModDimensions.register();
 	}
 }
